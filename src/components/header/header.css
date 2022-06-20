@@ -1,0 +1,157 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.header-detail{
+    
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    font-weight: 100;
+    
+}
+
+.header-detail h2{
+    color: white;
+}
+
+
+.btns{
+    display: flex;
+    gap:10px
+}
+
+.protfolio-img{
+    width: 35%;
+    margin: 0 auto;
+
+
+}
+.protfolio-img img{
+    background: linear-gradient(to bottom,var(--primary-var), var(--primary));
+    width: 100%;
+    padding: 30px 20px 0 20px;
+    border-top-right-radius:50%;
+    border-top-left-radius:50%;
+    
+
+
+}
+
+
+.header-social{
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+
+
+
+}
+
+.line{
+    background: var(--primary-var);
+    width: 1px;
+    height: 30px;
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 80px;
+    right: 5%;
+    transform: rotate(90deg);
+    font-size: 0.8rem;
+
+}
+.scroll-down p{
+  color: var(--primary-var);
+  cursor: pointer;
+}
+
+.nav{
+
+    background:rgba(0, 0, 0, 0.7);
+    width: max-content;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(200px);
+    z-index: 10;
+
+}
+
+.nav a{
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.typewriter::after{
+    content: "|";
+    margin-left: 5px;
+    animation: wink 1000ms infinite;
+    color: var(--primary-var);
+
+
+
+}
+
+@keyframes wink {
+    50%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+
+@media screen and (max-width:1024px) {
+    .protfolio-img{
+        width: 45%;
+        margin: 0 auto;
+    
+    
+    }
+    .header{
+        height: 80vh;
+    }
+
+  }
+  @media screen and (max-width: 600px) {
+    .header{
+        height: 70vh;
+    }
+  }
+  
+
+
+
+
+
+
+

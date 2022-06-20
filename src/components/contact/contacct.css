@@ -1,0 +1,102 @@
+.contact h2,.contact h5{
+    text-align: center;
+    
+}
+
+.contact{
+    /* padding-top: 100px; */
+    padding: 0 0 200px 0;
+}
+
+.contact-main{
+    display: flex;
+    gap:40px;
+    padding-top: 80px;
+
+}
+
+.contact-left{
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    flex-basis: 30%;
+
+}
+
+.contact-social{
+    background: var(--bg-variant);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+.contact-right{
+    flex-basis: 70%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+
+}
+.contact-right form input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid var(--bg-variant);
+    color: var(--primary);
+}
+.contact-right form textarea{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid var(--bg-variant);
+    color: var(--primary);
+}
+.contact-right form .submit{
+    align-self: flex-start;
+    width: auto;
+
+    background: var(--primary);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white) ;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:660px) {
+    .contact{
+        /* padding-top: 100px; */
+        padding:100px 0 100px 0;
+    }
+    .contact-main{
+        flex-direction: column;
+        align-items: stretch;
+
+    
+    }
+    .works-main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        padding-top: 50px;
+    }
+    .contact-right form input{
+        margin: 0 auto;
+
+    }
+    .contact-right form textarea{
+        margin: 0 auto;
+
+    }
+
+
+  }
